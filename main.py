@@ -8,6 +8,7 @@ import math
 def cleanse_data(df):
     # Your task here is to remove data from any ticker that isn't XXY, sort chronologically and return a dataframe
     # whose only column is 'Adj Close'
+    df=df[df['Adj Close'].isnin(['XXY'])]
     dfclean = df
     return dfclean
 
